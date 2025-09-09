@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@drawable/top"
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:text="Login"
+        android:textSize="45dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="45dp"
+        android:id="@+id/user"
+        android:layout_marginTop="75dp"
+        android:layout_below="@id/login"
+        android:hint="Username"
+        android:textSize="20dp"
+        android:fontFamily="@font/cossettetitreregular"
+        android:layout_marginStart="10dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="35dp"
+        android:hint="Password"
+        android:textSize="20dp"
+        android:id="@+id/password"
+        android:fontFamily="@font/cossettetitreregular"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/user"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgot"
+        android:text="Forgot Password"
+        android:textColor="@color/black"
+        android:layout_below="@id/password"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/log"
+        android:layout_below="@id/forgot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#03a9f4"
+        android:text="Log In"/>
+
+    <TextView
+        android:id="@+id/dont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Don't have an account?"
+        android:textColor="@color/black" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        android:text="Sign Up"
+        android:layout_below="@id/dont"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#03a9f4"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="160dp"/>
+
+
+</RelativeLayout>
